@@ -10,7 +10,7 @@ import UIKit
 
 extension UIButton {
     func configureButton(figureButton: UIButton) {
-        figureButton.layer.cornerRadius = 44
+        figureButton.layer.cornerRadius = frame.height/2
         figureButton.clipsToBounds = true
     }
 }
