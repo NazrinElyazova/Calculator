@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +29,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64Q-Ep-WzW">
-                                        <rect key="frame" x="20" y="120" width="353" height="50"/>
+                                        <rect key="frame" x="20" y="110" width="353" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="x83-bl-KLF"/>
                                         </constraints>
@@ -39,7 +40,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="64Q-Ep-WzW" firstAttribute="top" secondItem="1TU-k8-TKt" secondAttribute="bottom" constant="50" id="2H6-b8-C7L"/>
+                                    <constraint firstItem="64Q-Ep-WzW" firstAttribute="top" secondItem="1TU-k8-TKt" secondAttribute="bottom" constant="40" id="2H6-b8-C7L"/>
                                     <constraint firstAttribute="trailing" secondItem="64Q-Ep-WzW" secondAttribute="trailing" constant="20" id="RQJ-F6-0Pg"/>
                                     <constraint firstItem="64Q-Ep-WzW" firstAttribute="leading" secondItem="sOJ-LJ-ePR" secondAttribute="leading" constant="20" id="WK1-VQ-g9H"/>
                                     <constraint firstAttribute="height" constant="200" id="hQ1-LN-g8i"/>
@@ -48,50 +49,63 @@
                                     <constraint firstItem="1TU-k8-TKt" firstAttribute="leading" secondItem="sOJ-LJ-ePR" secondAttribute="leading" constant="20" id="tST-wj-qvu"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="E0z-zz-wLk">
-                                <rect key="frame" x="0.0" y="257" width="393" height="595"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="E0z-zz-wLk">
+                                <rect key="frame" x="0.0" y="257" width="393" height="545"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2OP-GF-DTk">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="111"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="89"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gj-4l-YwD">
-                                                <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="111"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="AC">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
-                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="allClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xrz-HU-sDI"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86D-Jo-SzA">
-                                                <rect key="frame" x="100.66666666666669" y="0.0" width="91" height="111"/>
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="91" height="89"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="delete.right" catalog="system">
-                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="DEL">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wbp-NN-3zD"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuh-ix-W86">
-                                                <rect key="frame" x="201.66666666666666" y="0.0" width="90.666666666666657" height="111"/>
+                                                <rect key="frame" x="201.66666666666666" y="0.0" width="90.666666666666657" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="%">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="percentageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wrQ-JN-qTc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-Xd-Sd3">
-                                                <rect key="frame" x="302.33333333333331" y="0.0" width="90.666666666666686" height="111"/>
+                                                <rect key="frame" x="302.33333333333331" y="0.0" width="90.666666666666686" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="/">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="divisionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9SD-Si-25F"/>
@@ -99,14 +113,17 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWd-hK-nyh">
-                                        <rect key="frame" x="0.0" y="121" width="393" height="111"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lWd-hK-nyh">
+                                        <rect key="frame" x="0.0" y="114" width="393" height="89"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tQ-Ep-299">
-                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="111"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="7">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -114,10 +131,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eru-Eu-8EO">
-                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="111"/>
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="91" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="8">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -125,10 +145,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCY-Sd-HGx">
-                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="111"/>
+                                                <rect key="frame" x="201.66666666666666" y="0.0" width="90.666666666666657" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="9">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -136,11 +159,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoA-U8-dKV">
-                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="111"/>
+                                                <rect key="frame" x="302.33333333333331" y="0.0" width="90.666666666666686" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="X">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="multiplicationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B1S-Uk-zYK"/>
@@ -148,14 +174,17 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFs-hs-Hfm">
-                                        <rect key="frame" x="0.0" y="242" width="393" height="111"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yFs-hs-Hfm">
+                                        <rect key="frame" x="0.0" y="228" width="393" height="89"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVb-wx-C69">
-                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="111"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="4">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -163,10 +192,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDx-at-3jZ">
-                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="111"/>
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="91" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="5">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -174,10 +206,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YX8-cK-MHF">
-                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="111"/>
+                                                <rect key="frame" x="201.66666666666666" y="0.0" width="90.666666666666657" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="6">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -185,11 +220,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umm-4W-iqp">
-                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="111"/>
+                                                <rect key="frame" x="302.33333333333331" y="0.0" width="90.666666666666686" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="-">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="subtractionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfA-Rq-P9s"/>
@@ -197,14 +235,17 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URz-U4-3to">
-                                        <rect key="frame" x="0.0" y="363" width="393" height="111"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="URz-U4-3to">
+                                        <rect key="frame" x="0.0" y="342" width="393" height="89"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inx-XM-KqG">
-                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="111"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inx-XM-KqG">
+                                                <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="1">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -212,10 +253,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eb5-GI-Ihi">
-                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="111"/>
+                                                <rect key="frame" x="100.66666666666669" y="0.0" width="91" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="2">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -223,10 +267,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk3-XH-3ft">
-                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="111"/>
+                                                <rect key="frame" x="201.66666666666666" y="0.0" width="90.666666666666657" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="3">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -234,11 +281,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwI-mb-SgQ">
-                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="111"/>
+                                                <rect key="frame" x="302.33333333333331" y="0.0" width="90.666666666666686" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="+">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="additionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="luC-di-Hn3"/>
@@ -246,25 +296,31 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="jbu-Bw-HmH">
-                                        <rect key="frame" x="0.0" y="484" width="393" height="111"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jbu-Bw-HmH">
+                                        <rect key="frame" x="0.0" y="456" width="393" height="89"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NU-1g-5QT">
-                                                <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="111"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="96.333333333333329" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title=".">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="dotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wH5-Wt-uRE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNk-bu-Ikn">
-                                                <rect key="frame" x="101.66666666666669" y="0.0" width="124.33333333333331" height="111"/>
+                                                <rect key="frame" x="106.33333333333331" y="0.0" width="111.66666666666669" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="0">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -272,13 +328,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnT-vY-WQM">
-                                                <rect key="frame" x="226" y="0.0" width="167" height="111"/>
+                                                <rect key="frame" x="228" y="0.0" width="165" height="89"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="=">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                     </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -288,7 +344,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -296,7 +352,7 @@
                         <constraints>
                             <constraint firstItem="E0z-zz-wLk" firstAttribute="top" secondItem="sOJ-LJ-ePR" secondAttribute="bottom" id="2X7-iU-blA"/>
                             <constraint firstItem="sOJ-LJ-ePR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="36I-3y-4gW"/>
-                            <constraint firstAttribute="bottom" secondItem="E0z-zz-wLk" secondAttribute="bottom" id="8He-Ag-w9o"/>
+                            <constraint firstAttribute="bottom" secondItem="E0z-zz-wLk" secondAttribute="bottom" constant="50" id="8He-Ag-w9o"/>
                             <constraint firstItem="E0z-zz-wLk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SwF-pK-2jQ"/>
                             <constraint firstItem="sOJ-LJ-ePR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-46" id="gWR-Gf-HMt"/>
                             <constraint firstItem="E0z-zz-wLk" firstAttribute="top" secondItem="sOJ-LJ-ePR" secondAttribute="bottom" id="gaR-1R-rdi"/>
@@ -306,8 +362,28 @@
                     </view>
                     <navigationItem key="navigationItem" id="Atg-mb-6DN"/>
                     <connections>
+                        <outlet property="acButton" destination="2Gj-4l-YwD" id="jaa-EX-Xf8"/>
+                        <outlet property="calculate" destination="BnT-vY-WQM" id="mWw-PZ-mEX"/>
                         <outlet property="calculateFiguresLabel" destination="1TU-k8-TKt" id="lOF-dx-aaj"/>
+                        <outlet property="delete" destination="86D-Jo-SzA" id="LyF-Rs-elC"/>
+                        <outlet property="division" destination="JGp-Xd-Sd3" id="POZ-MY-puf"/>
+                        <outlet property="dot" destination="7NU-1g-5QT" id="Fxe-Pg-L9N"/>
+                        <outlet property="eight" destination="Eru-Eu-8EO" id="od4-zJ-ne6"/>
+                        <outlet property="equal" destination="BnT-vY-WQM" id="cxb-Ke-qEk"/>
+                        <outlet property="five" destination="DDx-at-3jZ" id="HV1-2Z-tUQ"/>
+                        <outlet property="four" destination="mVb-wx-C69" id="hbX-gx-59F"/>
+                        <outlet property="multip" destination="DoA-U8-dKV" id="zth-Zx-b90"/>
+                        <outlet property="nine" destination="fCY-Sd-HGx" id="Jxe-nv-1eF"/>
+                        <outlet property="one" destination="Inx-XM-KqG" id="EPp-hz-uJK"/>
+                        <outlet property="percent" destination="nuh-ix-W86" id="lZ0-R9-wpU"/>
+                        <outlet property="plus" destination="zwI-mb-SgQ" id="G0H-hB-hyK"/>
                         <outlet property="resultLabel" destination="64Q-Ep-WzW" id="YZK-6V-vha"/>
+                        <outlet property="seven" destination="0tQ-Ep-299" id="B9X-L6-X2W"/>
+                        <outlet property="six" destination="YX8-cK-MHF" id="vRh-IG-dIs"/>
+                        <outlet property="subtraction" destination="umm-4W-iqp" id="LjH-We-kFb"/>
+                        <outlet property="three" destination="Gk3-XH-3ft" id="oPG-f6-38q"/>
+                        <outlet property="two" destination="Eb5-GI-Ihi" id="7sT-BZ-LHW"/>
+                        <outlet property="zero" destination="tNk-bu-Ikn" id="SiM-1M-U4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -334,7 +410,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="delete.right" catalog="system" width="128" height="102"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

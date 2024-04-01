@@ -13,6 +13,7 @@
 		7BAFEFC72BBA8FFE002A9F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAFEFC62BBA8FFE002A9F80 /* Assets.xcassets */; };
 		7BAFEFCA2BBA8FFE002A9F80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAFEFC82BBA8FFE002A9F80 /* LaunchScreen.storyboard */; };
 		7BAFEFD22BBA9302002A9F80 /* CalculateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFEFD12BBA9302002A9F80 /* CalculateController.swift */; };
+		7BAFEFD42BBAA855002A9F80 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFEFD32BBAA855002A9F80 /* ButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7BAFEFC92BBA8FFE002A9F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BAFEFCB2BBA8FFE002A9F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BAFEFD12BBA9302002A9F80 /* CalculateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateController.swift; sourceTree = "<group>"; };
+		7BAFEFD32BBAA855002A9F80 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				7BAFEFBF2BBA8FFB002A9F80 /* SceneDelegate.swift */,
 				7BAFEFC32BBA8FFB002A9F80 /* Main.storyboard */,
 				7BAFEFD12BBA9302002A9F80 /* CalculateController.swift */,
+				7BAFEFD32BBAA855002A9F80 /* ButtonExtension.swift */,
 				7BAFEFC62BBA8FFE002A9F80 /* Assets.xcassets */,
 				7BAFEFC82BBA8FFE002A9F80 /* LaunchScreen.storyboard */,
 				7BAFEFCB2BBA8FFE002A9F80 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BAFEFD22BBA9302002A9F80 /* CalculateController.swift in Sources */,
+				7BAFEFD42BBAA855002A9F80 /* ButtonExtension.swift in Sources */,
 				7BAFEFBE2BBA8FFB002A9F80 /* AppDelegate.swift in Sources */,
 				7BAFEFC02BBA8FFB002A9F80 /* SceneDelegate.swift in Sources */,
 			);
